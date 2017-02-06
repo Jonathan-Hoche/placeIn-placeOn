@@ -51,7 +51,7 @@ extension UIView {
     // Center inside a view X axis
     func placeInMidX(of view: UIView, offset: CGFloat = 0) {
         let halfWidthOfViewToBeCenteredIn = view.frame.width / 2
-        let halfWidth = self.bounds.width / 2 + (offset)
+        let halfWidth = self.bounds.width / 2
         
         if (self.superview == view) {
             self.frame.origin.x = view.bounds.origin.x + halfWidthOfViewToBeCenteredIn - halfWidth + (offset)
