@@ -31,6 +31,7 @@ class Example2ViewController: UIViewController {
     @IBOutlet weak var pinkBox6View: UIView!
     @IBOutlet weak var pinkBox7View: UIView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -78,7 +79,6 @@ class Example2ViewController: UIViewController {
         
         pinkBox7View.placeInRightOfSuperView(offset: -20)
         pinkBox7View.placeInTopOfSuperView(offset: 100)
-
     }
 
     override func didReceiveMemoryWarning() {

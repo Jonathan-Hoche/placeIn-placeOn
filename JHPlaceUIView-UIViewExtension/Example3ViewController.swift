@@ -27,10 +27,8 @@ class Example3ViewController: UIViewController {
     @IBOutlet weak var green4: UIView!
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         //
         red1.placeOnTop(of: blue1)
@@ -79,5 +77,4 @@ class Example3ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }

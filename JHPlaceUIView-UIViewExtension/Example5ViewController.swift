@@ -10,7 +10,6 @@ import UIKit
 
 class Example5ViewController: UIViewController {
 
-    
     @IBOutlet weak var test1: UIView!
     @IBOutlet weak var black1: UIView!
     
@@ -34,7 +33,6 @@ class Example5ViewController: UIViewController {
     
     @IBOutlet weak var test8: UIView!
     @IBOutlet weak var black8: UIView!
-    
     
     
     override func viewDidLoad() {
@@ -64,7 +62,6 @@ class Example5ViewController: UIViewController {
         test5.placeInRight(of: view)
         black5.placeInMidX(of: test5)
         black5.placeInMidY(of: test5)
-        
         //
         
         test6.placeInLeftOfSuperView(offset: 20)
@@ -78,6 +75,7 @@ class Example5ViewController: UIViewController {
         test8.placeInLeft(of: test1)
         test8.placeOnTop(of: test1, offset: -10)
         
+        //
         
         UIView.animate(withDuration: 5, delay: 5, options: .curveEaseInOut, animations: {
             self.test1.placeInBottomOfSuperView(offset: -45)
@@ -91,31 +89,21 @@ class Example5ViewController: UIViewController {
             self.test4.placeInRightOfSuperView(offset: -20)
             self.black4.placeInBottomOfSuperView()
             
-            
-            
             self.test8.placeOnRight(of: self.test7, offset: 10)
             self.test8.placeInMidYOfSuperView()
             self.black8.placeOnBottom(of: self.test8)
             
             self.test5.placeOnRight(of: self.test8, offset: 10)
-            //self.black5.placeOnRight(of: self.test5)
             
         }) { (completion) in
-            
             UIView.animate(withDuration: 5, animations: { 
                 self.black5.placeOnRight(of: self.test5)
             })
-            
         }
-        
     }
     
-    
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
 }

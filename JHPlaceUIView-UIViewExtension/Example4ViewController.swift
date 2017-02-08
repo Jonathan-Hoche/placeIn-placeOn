@@ -23,15 +23,8 @@ class Example4ViewController: UIViewController {
     @IBOutlet weak var pink: UIView!
     
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
-        
-        
         
         UIView.animate(withDuration: 3) {
             self.orange.placeInCenterOfSuperView()
@@ -49,9 +42,9 @@ class Example4ViewController: UIViewController {
             
             self.yellow.placeOnLeft(of: self.black1)
             self.yellow.placeOnBottom(of: self.red)
-            
             //
             
+            //
             self.brown.placeOnRight(of: self.blue)
             self.brown.placeInBottom(of: self.white)
             
@@ -70,5 +63,4 @@ class Example4ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4165AC2A1E4B5DAF007A1440 /* ExampleShorthandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4165AC291E4B5DAF007A1440 /* ExampleShorthandViewController.swift */; };
 		416EE0931E48D8CB00BF2D0E /* Example1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416EE0921E48D8CB00BF2D0E /* Example1ViewController.swift */; };
 		41B251DE1E4221D700C762DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B251DD1E4221D700C762DE /* AppDelegate.swift */; };
 		41B251E31E4221D700C762DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B251E11E4221D700C762DE /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4165AC291E4B5DAF007A1440 /* ExampleShorthandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleShorthandViewController.swift; sourceTree = "<group>"; };
 		416EE0921E48D8CB00BF2D0E /* Example1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example1ViewController.swift; sourceTree = "<group>"; };
 		41B251DA1E4221D700C762DE /* JHPlaceUIView-UIViewExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JHPlaceUIView-UIViewExtension.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B251DD1E4221D700C762DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				416EE0921E48D8CB00BF2D0E /* Example1ViewController.swift */,
+				4165AC291E4B5DAF007A1440 /* ExampleShorthandViewController.swift */,
 				41B251F41E42287300C762DE /* Example2ViewController.swift */,
 				41B251F81E42510200C762DE /* Example3ViewController.swift */,
 				41B251FA1E436F3400C762DE /* Example4ViewController.swift */,
@@ -190,6 +193,7 @@
 				41B251FB1E436F3400C762DE /* Example4ViewController.swift in Sources */,
 				41B251F71E42490000C762DE /* PlaceOn.swift in Sources */,
 				41B251FD1E43850700C762DE /* Example5ViewController.swift in Sources */,
+				4165AC2A1E4B5DAF007A1440 /* ExampleShorthandViewController.swift in Sources */,
 				41B251F91E42510200C762DE /* Example3ViewController.swift in Sources */,
 				41B251DE1E4221D700C762DE /* AppDelegate.swift in Sources */,
 				41B251F51E42287300C762DE /* Example2ViewController.swift in Sources */,

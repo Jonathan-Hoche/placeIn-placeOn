@@ -33,9 +33,9 @@ class Example1ViewController: UIViewController {
     
     @IBOutlet weak var inMidXandBottomButton: UIButton!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         onRightLabel.placeOnRight(of: red)
         onRightLabel.placeInMidY(of: red)
         onLeftLabel.placeOnLeft(of: yellow)
@@ -60,7 +60,6 @@ class Example1ViewController: UIViewController {
     }
     
     @IBAction func placeButtonTouchUpInside(_ sender: UIButton) {
-        
         UIView.animate(withDuration: 3, animations: {
             self.onRightLabel.placeInMidYOfSuperView()
             self.onLeftLabel.placeInMidYOfSuperView()
@@ -108,18 +107,13 @@ class Example1ViewController: UIViewController {
                     self.inTopLabel.placeInTop(of: self.cyan)
                     self.inTopLabel.placeInMidX(of: self.cyan)
                     self.inCenterLabel.placeInCenter(of: self.purple)
-                    
                 }, completion: nil )
             })
         }
     }
     
-    
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
 }

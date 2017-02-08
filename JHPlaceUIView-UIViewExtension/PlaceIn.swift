@@ -14,7 +14,7 @@ import UIKit
 
     WARNINGS:
         1. Call/Use only after the UIView has been initilized!!!
-        2. If UIView has constraints - set translatesAutoresizingMaskIntoConstraints = true
+        2. If the UIView has constraints - set its property translatesAutoresizingMaskIntoConstraints = true
         3. May experience unexpected results when tryin to position a UIView in a UIView that is not its immediate superview
 */
 
@@ -94,6 +94,33 @@ extension UIView {
 }
 
 
+// "Shorthands" for positioning in x and y axis
+extension UIView {
+    
+    //MARK: - "Shorthands" X and Y position
+    
+    func placeInTopLeft(of view: UIView, offsetX: CGFloat = 0, offsetY: CGFloat = 0) {
+        placeInTop(of: view, offset: offsetY)
+        placeInLeft(of: view, offset: offsetX)
+    }
+    
+    func placeInTopRight(of view: UIView, offsetX: CGFloat = 0, offsetY: CGFloat = 0) {
+        placeInTop(of: view, offset: offsetY)
+        placeInRight(of: view, offset: offsetX)
+    }
+    
+    func placeInBottomLeft(of view: UIView, offsetX: CGFloat = 0, offsetY: CGFloat = 0) {
+        placeInBottom(of: view, offset: offsetY)
+        placeInLeft(of: view, offset: offsetX)
+    }
+    
+    func placeInBottomRight(of view: UIView, offsetX: CGFloat = 0, offsetY: CGFloat = 0) {
+        placeInBottom(of: view, offset: offsetY)
+        placeInRight(of: view, offset: offsetX)
+    }
+}
+
+
 // "Shorthands" for positioning a view in it's own parent view (superview)
 extension UIView {
     
@@ -136,6 +163,28 @@ extension UIView {
     // Place in the middle Y position of the superview
     func placeInMidYOfSuperView(offset: CGFloat = 0) {
         placeInMidY(of: superview!, offset: offset)
+    }
+    
+    //MARK: - superview "Shorthands" X and Y position
+    
+    func placeInTopLeftOfSuperView(offsetX: CGFloat = 0, offsetY: CGFloat = 0) {
+        placeInTop(of: superview!, offset: offsetY)
+        placeInLeft(of: superview!, offset: offsetX)
+    }
+    
+    func placeInTopRightOfSuperView(offsetX: CGFloat = 0, offsetY: CGFloat = 0) {
+        placeInTop(of: superview!, offset: offsetY)
+        placeInRight(of: superview!, offset: offsetX)
+    }
+    
+    func placeInBottomLeftOfSuperView(offsetX: CGFloat = 0, offsetY: CGFloat = 0) {
+        placeInBottom(of: superview!, offset: offsetY)
+        placeInLeft(of: superview!, offset: offsetX)
+    }
+    
+    func placeInBottomRightOfSuperView(offsetX: CGFloat = 0, offsetY: CGFloat = 0) {
+        placeInBottom(of: superview!, offset: offsetY)
+        placeInRight(of: superview!, offset: offsetX)
     }
 }
 

@@ -14,7 +14,7 @@ import UIKit
  
     WARNINGS:
         1. Call/Use only after the UIView has been initilized!!!
-        2. If UIView has constraints - set translatesAutoresizingMaskIntoConstraints = true
+        2. If the UIView has constraints - set its property translatesAutoresizingMaskIntoConstraints = true
         3. May experience unexpected results when tryin to position a UIView in a view that is not its immediate superview
 */
 
@@ -54,5 +54,32 @@ extension UIView {
         } else {
             self.frame.origin.y = view.frame.origin.y - self.bounds.height + (offset)
         }
+    }
+}
+
+extension UIView {
+    
+    //MARK: - X position ONLY
+    
+    func placeOnTopLeft(of view: UIView, offsetX: CGFloat = 0, offsetY: CGFloat = 0) {
+        placeOnTop(of: view, offset: offsetY)
+        placeOnLeft(of: view, offset: offsetX)
+    }
+    
+    func placeOnTopRight(of view: UIView, offsetX: CGFloat = 0, offsetY: CGFloat = 0) {
+        placeOnTop(of: view, offset: offsetY)
+        placeOnRight(of: view, offset: offsetX)
+    }
+    
+    //MARK: - Y position ONLY
+    
+    func placeOnBottomLeft(of view: UIView, offsetX: CGFloat = 0, offsetY: CGFloat = 0) {
+        placeOnBottom(of: view, offset: offsetY)
+        placeOnLeft(of: view, offset: offsetX)
+    }
+    
+    func placeOnBottomRight(of view: UIView, offsetX: CGFloat = 0, offsetY: CGFloat = 0) {
+        placeOnBottom(of: view, offset: offsetY)
+        placeOnRight(of: view, offset: offsetX)
     }
 }
