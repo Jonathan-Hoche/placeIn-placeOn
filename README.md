@@ -1,7 +1,7 @@
 # placeIn-placeOn
 
 
-##A group of Swift UIView extensions that simplify frame-based positioning a UIView within or around another UIView such as UILabel, UIButton etc...
+## A group of Swift UIView extensions that simplify frame-based positioning a UIView within or around another UIView such as UILabel, UIButton etc...
 *The placeIn... methods help with positioning within another UIView.*
 
 *The placeOn... methods help with positioning around another UIView.*
